@@ -98,3 +98,52 @@ button {
 button:hover {
     background: #005fa3;
 }
+
+#packages {
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+.package {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.package img {
+    width: 100%;
+    max-width: 400px;
+}
+
+.package h3 {
+    margin: 15px 0;
+}
+
+.package ul {
+    list-style: none;
+    padding: 0;
+}
+
+.package li {
+    margin: 5px 0;
+}
+
+.price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0077cc;
+}
+
+.book-now {
+    padding: 10px 20px;
+    border: none;
+    background: #f07b3f;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.book-now:hover {
+    background: #d46932;
+}
