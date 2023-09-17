@@ -1,15 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <!-- Meta information for responsive design and character set -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- External stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+        <!-- Webpage title -->
     <title>Travel Agency</title>
 </head>
 <body>
+        <!-- Header section with navigation -->
     <header>
         <nav>
+                        <!-- Company logo -->
             <div id="logo">Anderson's Travel Agency</div>
+                        <!-- Navigation links -->
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#packages">Packages</a></li>
@@ -17,14 +24,17 @@
             </ul>
         </nav>
     </header>
+        <!-- Hero section to attract users -->
     <section id="home">
         <h1>Your Adventure Starts Here!</h1>
         <button id="explore-button">Explore</button>
     </section>
+        <!-- Packages section for Bali -->
     <section id="packages">
         <div class="package">
             <img src="/Users/williamanderson/Desktop/Github-Repo/travelAgency/aron-visuals-1kdIG_258bU-unsplash.jpg" alt="Bali, Indonesia">
             <h3>7-Day Bali Explorer</h3>
+                        <!-- Details of the package -->
             <p>Explore the beautiful landscapes, culture, and beaches of Bali, Indonesia. This 7-day package includes:</p>
             <ul>
                 <li>Round-trip Airfare</li>
@@ -38,10 +48,12 @@
             <button class="book-now">Book Now</button>
         </div>
     </section>
+        <!-- Packages section for Tokyo -->
     <section id="packages">
         <div class="package">
             <img src="/Users/williamanderson/Desktop/Github-Repo/travelAgency/pema-lama-Lfh0wUAJXpA-unsplash.jpg" alt="Tokyo, Japan">
             <h3>5-Day Tokyo Explorer</h3>
+                        <!-- Details of the package -->
             <p>Explore the beautiful landscapes, culture, and beaches of Tokyo, Japan. This 5-day package includes:</p>
             <ul>
                 <li>Round-trip Airfare</li>
@@ -55,10 +67,12 @@
             <button class="book-now">Book Now</button>
         </div>
     </section>
+        <!-- Packages section for Sydney -->
     <section id="packages">
         <div class="package">
             <img src="/Users/williamanderson/Desktop/Github-Repo/travelAgency/april-pethybridge-KeDdztmEqVc-unsplash.jpg" alt="Sydney, Australia">
             <h3>10-Day Sydney Explorer</h3>
+                        <!-- Details of the package -->
             <p>Explore the beautiful landscapes, culture, and beaches of Sydney, Australia. This 10-day package includes:</p>
             <ul>
                 <li>Round-trip Airfare</li>
@@ -72,26 +86,42 @@
             <button class="book-now">Book Now</button>
         </div>
     </section>
-    
+        <!-- Contact section for user queries -->
     <section id="contact">
         <h2>Contact Us</h2>
+                <!-- Form to collect user data -->
+
+        <!-- Start of the form with POST method which sends the form data to the server at the "/submit" endpoint -->
         <form action="/submit" method="post">
+                <!-- Form group for collecting user's name -->
             <div class="form-group">
+                        <!-- Label for the name input field -->
                 <label for="name">Name:</label>
+                        <!-- Input field for name; "required" attribute ensures that this field must be filled out before submitting the form -->
                 <input type="text" id="name" name="name" required>
             </div>
+                <!-- Form group for collecting user's email -->
             <div class="form-group">
+                        <!-- Label for the email input field -->
                 <label for="email">Email:</label>
+                        <!-- Input field for email with type "email" for built-in validation; "required" attribute ensures the field must be filled out -->
                 <input type="email" id="email" name="email" required>
             </div>
+                <!-- Form group for collecting user's message -->
             <div class="form-group">
+                        <!-- Label for the message textarea -->
                 <label for="message">Message:</label>
+                        <!-- Textarea for the message input; "required" attribute ensures the textarea must be filled out; "rows" attribute specifies its height -->
                 <textarea id="message" name="message" rows="5" required></textarea>
             </div>
+                <!-- Submit button to submit the form -->
             <button type="submit">Send Message</button>
+                <!-- Div to display any potential error messages related to form submission -->
+            <div id="error-message" class="error"></div>
         </form>
     </section>
-    <footer>
+        <!-- Footer section with copyright info -->
+    <footer class="bg-black">
         <p>&copy; 2023 Anderson's Travel Agency</p>
     </footer>
 </body>
