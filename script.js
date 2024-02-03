@@ -21,3 +21,12 @@ document.querySelector('form').addEventListener('submit', function(e) {
         errorMessage.style.display = 'none'; // Hide the error message
     }
 });
+
+const explore = document.getElementById('explore-button').addEventListener('click', function() {
+    const packages = document.getElementById('packages');
+    packages.scrollIntoView({
+        behavior: 'smooth'
+    });
+})
+
+
