@@ -67,6 +67,9 @@ nav ul li {
     text-align: center;
     margin-bottom: 20px;
 }
+#booking-form {
+    display:block;
+}
 
 .form-group {
     margin-bottom: 15px;
