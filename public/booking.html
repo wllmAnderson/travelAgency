@@ -1,3 +1,4 @@
+<!--booking.html-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +28,7 @@
     <!-- Booking Form Section -->
     <section class="booking-form">
         <h2>Book Your Trip</h2>
-        <form action="confirmation-page.html" method="post">
+        <form action="/submit_booking" method="post">
             <!-- Input fields for traveler information -->
             <label for="fullName">Full Name:</label>
             <input type="text" id="fullName" name="fullName" required>
@@ -43,6 +44,7 @@
             <select id="destination" name="destination" required>
                 <option value="paris">Paris</option>
                 <option value="tokyo">Tokyo</option>
+                <option value="bali">Bali</option>
                 <!-- Add more destination options as needed -->
             </select>
 
@@ -74,3 +76,4 @@
   <script src="./script.js"></script>
 </body>
 </html>
+

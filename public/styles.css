@@ -29,7 +29,7 @@ nav ul li {
 }
 
 #home {
-    background: url('roberto-nickson-HmieZw0YOC0-unsplash.jpg') no-repeat center center;
+    background: url('/images/roberto-nickson-HmieZw0YOC0-unsplash.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
     display: flex;

@@ -37,6 +37,21 @@ document.querySelector(".confirm").addEventListener("click", function (e) {
   window.location.href = "confirmation-page.html";
 });
 
+// Fetch confirmation data from the server
+fetch('/confirmation_data')
+    .then(response => response.json())
+    .then(data => {
+        // Update the confirmation page with the received data
+        document.getElementById('fullName').textContent = data.fullName;
+        document.getElementById('email').textContent = data.email;
+        document.getElementById('phone').textContent = data.phone;
+        document.getElementById('destination').textContent = data.destination;
+        document.getElementById('travelDate').textContent = data.travelDate;
+        document.getElementById('accommodation').textContent = data.accommodation;
+        document.getElementById('numTravelers').textContent = data.numTravelers;
+    });
+    
+
 
 /*
 // Adding an event listener to the form for the 'submit' event
