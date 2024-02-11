@@ -34,7 +34,17 @@ document.querySelector(".confirm").addEventListener("click", function (e) {
   // Perform any additional actions or validation here
 
   // Redirect to the confirmation page
-  window.location.href = "confirmation-page.html";
+  window.location.href = "payment.html";
+});
+
+document.querySelector(".login").addEventListener("click", function (e) {
+  e.preventDefault(); // Prevent the default form submission behavior
+
+  // Perform any additional actions or validation here
+
+  // Redirect to the confirmation page
+  alert('test');
+  window.location.href = "/login.html";
 });
 
 // Fetch confirmation data from the server
@@ -50,6 +60,20 @@ fetch('/confirmation_data')
         document.getElementById('accommodation').textContent = data.accommodation;
         document.getElementById('numTravelers').textContent = data.numTravelers;
     });
+
+    // Handle payment submission
+app.post('/submit_payment', (req, res) => {
+  // Process the payment (e.g., validate credit card, charge the card)
+  const paymentData = req.body;
+
+  // Assuming payment processing logic here...
+
+  // Once payment is successful, confirm the booking
+  // You can integrate with a payment gateway API for actual payment processing
+  // For demonstration purposes, let's just send a confirmation message
+  res.send('Payment successful. Your booking is confirmed!');
+});
+
     
 
 
