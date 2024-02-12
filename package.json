@@ -4,8 +4,15 @@
   "description": "Welcome to the official repository for Anderson's Travel Agency, a platform dedicated to bringing the best travel experiences to our users. This web application provides various travel packages to some of the most stunning destinations worldwide.",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Your Name Here",
+  "license": "ISC",
+  "dependencies": {
+    
+  },
+  "devDependencies": {
+   
+  }
 }
