@@ -1,0 +1,11 @@
+{
+  "name": "travelagency",
+  "version": "1.0.0",
+  "description": "Welcome to the official repository for Anderson's Travel Agency, a platform dedicated to bringing the best travel experiences to our users. This web application provides various travel packages to some of the most stunning destinations worldwide.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
